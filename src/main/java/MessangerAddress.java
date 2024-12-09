@@ -49,8 +49,8 @@ public class MessangerAddress {
     }
 
     public void printMessageInfo() {
-        System.out.println("Sender: " + sender);
-        System.out.println("Addressee: " + addressee);
+        System.out.println("Sender: " + sender.getNickname());
+        System.out.println("Addressee: " + addressee.getNickname());
         System.out.println("Text: " + text);
         System.out.println("Time: " + time);
     }
