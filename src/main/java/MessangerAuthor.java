@@ -2,12 +2,12 @@ public class MessangerAuthor {
 
     private String nickname;
     private String username;
-    private int phoneNumber;
+    private Long phoneNumber;
     private String password;
 
     public MessangerAuthor() {}
 
-    public MessangerAuthor(String nickname, String username, int phoneNumber, String password) {
+    public MessangerAuthor(String nickname, String username, Long phoneNumber, String password) {
         this.nickname = nickname;
         this.username = username;
         this.phoneNumber = phoneNumber;
@@ -26,7 +26,7 @@ public class MessangerAuthor {
         this.password = password;
     }
 
-    public void setPhoneNumber(int phoneNumber) {
+    public void setPhoneNumber(Long phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
 
@@ -42,7 +42,7 @@ public class MessangerAuthor {
         return password;
     }
 
-    public int getPhonenumber() {
+    public Long getPhonenumber() {
         return phoneNumber;
     }
 
