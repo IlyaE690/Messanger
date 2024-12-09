@@ -1,18 +1,57 @@
 public class MessangerAddress {
     private MessangerAuthor sender = new MessangerAuthor();
-    private MessangerAuthor poluchatel = new MessangerAuthor();
+
+    private MessangerAuthor addressee = new MessangerAuthor();
+
     private String text;
+
     private String time;
-    private void setText(String text) {
+
+    public MessangerAddress(){}
+
+    public MessangerAddress(MessangerAuthor sender, MessangerAuthor addressee, String text, String time){
+        this.sender = sender;
+        this.addressee = addressee;
+        this.text = text;
+        this.time = time;
+    }
+
+    public void setText(String text) {
         this.text = text;
     }
-    private void setSender(MessangerAuthor sender) {
+
+    public void setSender(MessangerAuthor sender) {
         this.sender = sender;
     }
-    private void setPoluchatel(MessangerAuthor poluchatel) {
-        this.poluchatel = poluchatel;
+
+    public void setAddressee(MessangerAuthor addressee) {
+        this.addressee = addressee;
     }
-    private void setTime(String time) {
+
+    public void setTime(String time) {
         this.time = time;
+    }
+
+    public String getTime() {
+        return time;
+    }
+
+    public MessangerAuthor getSender() {
+        return sender;
+    }
+
+    public MessangerAuthor getAddressee() {
+        return addressee;
+    }
+
+    public String getText() {
+        return text;
+    }
+
+    public void printMessageInfo() {
+        System.out.println("Sender: " + sender);
+        System.out.println("Addressee: " + addressee);
+        System.out.println("Text: " + text);
+        System.out.println("Time: " + time);
     }
 }
