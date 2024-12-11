@@ -51,5 +51,6 @@ public class MessangerAuthor {
         System.out.println("Username: " + username);
         System.out.println("Password: " + password);
         System.out.println("Phone Number: " + phoneNumber);
+        System.out.println();
     }
 }
